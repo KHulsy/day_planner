@@ -1,5 +1,34 @@
+  <html>
+    <head>
+    <title>Div BG color</title>
+    <script type="text/javascript">
+    function Off(idecko)
+    {
+    document.getElementById(idecko).style.background="rgba(0,0,0,0)"; <!--- Default --->
+    }
+    function cOn(idecko)
+    {
+    document.getElementById(idecko).style.background="rgb(0,60,255)"; <!--- New content color --->
+    }
+    function hOn(idecko)
+    {
+    document.getElementById(idecko).style.background="rgb(60,255,0)"; <!--- New h2 color --->
+    }
+    </script>
+    </head>
+    <body>
 
-<html>
+    <div id="catestory">
+
+        <div class="content" id="myid1" onmouseover="cOn('myid1'); hOn('h21')" onmouseout="Off('myid1'); Off('h21')">
+          <h2 id="h21">some title here</h2>
+          <p>some content here</p>
+        </div>
+
+        <div class="content" id="myid2" onmouseover="cOn('myid2'); hOn('h22')" onmouseout="Off('myid2'); Off('h22')">
+          <h2 id="h22">some title here</h2>
+          <p>some content here</p>
+        </div><html>
 <body style=">
 <!DOCTYPE html>
 <html>
